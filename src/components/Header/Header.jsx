@@ -38,27 +38,26 @@ const Header = () => {
         </nav>
       ) : location.pathname === '/home' ? (
         <nav className="navbar navbar-expand-lg navbar-light">
-            <div className="container-fluid">
-                <a className="navbar-brand" href="#">Navbar</a>
+            <div className="container-fluid home-header">
+                <div className='logo-nav'>
+                    <Link className="navbar-brand logo" to="/home">
+                        <div className="logo-mark">🚀</div>
+                        <h1 className="heading ps-2 mb-0">KidsLearn</h1>
+                    </Link>
+                    <a href="" className='courses'>Courses</a>
+                </div>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul className="navbar-nav mb-2 mb-lg-0">
-                    <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li className="nav-item">
-                    <a className="nav-link" href="#">Link</a>
-                    </li>
-                    <li className="nav-item">
-                    <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form className="d-flex">
-                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button className="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                    <ul className="navbar-nav mb-2 mb-lg-0 ms-lg-auto d-flex align-items-center">
+                        <li className="nav-item">
+                            <Link to="/login" className='link'>Login</Link>
+                        </li>
+                        <li className="nav-item">
+                            <button className='register-btn'>Register For Free</button>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>

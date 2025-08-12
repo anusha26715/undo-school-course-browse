@@ -98,3 +98,55 @@ ul i{
     font-size: 12px;
 }
 
+/* login header css complete */
+
+/* home header css start */
+
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-nav{
+    display: flex;
+    align-items: center;
+}
+
+
+.register-btn{
+    background: linear-gradient(45deg, var(--color-deep-purple), var(--color-deep-pink));
+    color: var(--color-context-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.courses{
+    color: var(--color-purple);
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.courses::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, var(--color-purple), var(--color-pink), var(--color-orange-yellow));
+}
+
+.link{
+    color: var(--color-purple);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 21px;
+    margin-right: 25px;
+}

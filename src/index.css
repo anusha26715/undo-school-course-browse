@@ -19,10 +19,11 @@
   --color-yellow: #F7D06B;
   --color-transperent-yellow: rgba(255, 251, 0, 0.591);
   --color-context-white: rgba(246, 245, 245, 0.9);
+  --color-deep-purple:#3A1D67;
+  --color-deep-pink:#F301AB;
+  --color-orange:rgb(255, 77, 0);
+  --color-dark-yellow:rgb(255, 204, 0);
+  --color-light-pink:rgb(255, 153, 204);
 }
 
-/* body{
-  background: linear-gradient(125deg, var(--color-purple), var(--color-pink),var(--color-orange-yellow));
-  height: 100%;
-} */
 

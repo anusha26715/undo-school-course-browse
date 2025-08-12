@@ -199,7 +199,10 @@
 
 /* Top-right (2nd cell) and bottom-left (3rd cell) shorter */
 
-
+.login-img-1,.login-img-4{
+    position: relative;
+    height: fit-content;
+}
 
 /* 1st image: tall (top-left) */
 .login-img-1 img {
@@ -224,4 +227,37 @@
 .login-img-4 img {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+}
+
+.icon-container {
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-icon{
+    top: -15px;
+    left:-15px;
+    background-color: var(--color-dark-yellow);
+}
+
+.bottom-icon{
+    bottom: -15px;
+    right: -15px;
+    background-color: var(--color-light-pink);
+}
+
+.star{
+    font-size: 1.3rem;
+    background: linear-gradient(60deg, var(--color-white) 35%,  var(--color-orange));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 2px 20px rgba(0, 0, 0, 0.1));
 }

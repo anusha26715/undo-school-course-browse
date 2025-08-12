@@ -48,6 +48,9 @@ const Login = () => {
           <div className="col-lg-6 grid-photo-container">
             <div className="grid-photo-wrapper">
               <div className="login-img-1">
+                <div className="icon-container top-icon">
+                  <i class="bi bi-star-fill star"></i>
+                </div>
                 <img src="/src/assets/images/learning-img-1.jpg" alt="kids learn" />
               </div>
               <div className="login-img-2 d-flex">
@@ -59,6 +62,9 @@ const Login = () => {
               </div>
               
               <div className="login-img-4">
+                <div className="icon-container bottom-icon">
+                  <div className="fs-4">🎈</div>
+                </div>
                 <img src="/src/assets/images/learning-img-4.jpg" alt="kids learn" />
               </div>
             </div>
