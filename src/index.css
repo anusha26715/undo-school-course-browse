@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Fredoka One', 'Poppins', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+:root {
+  --color-purple:#9934E4;
+  --color-pink:#D141B1;
+  --color-orange-yellow:#F8854C;
+  --color-grey-white:rgb(246, 245, 245);
+  --color-white: #fff;
+  --color-transperent: rgba(255, 255, 255, 0.3);
+  --color-yellow: #F7D06B;
+  --color-transperent-yellow: rgba(255, 251, 0, 0.591);
+  --color-context-white: rgba(246, 245, 245, 0.9);
+}
+
+/* body{
+  background: linear-gradient(125deg, var(--color-purple), var(--color-pink),var(--color-orange-yellow));
+  height: 100%;
+} */
+
