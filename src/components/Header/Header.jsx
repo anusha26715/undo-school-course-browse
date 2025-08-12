@@ -55,7 +55,7 @@ const Header = () => {
                             <Link to="/login" className='link'>Login</Link>
                         </li>
                         <li className="nav-item">
-                            <button className='register-btn'>Register For Free</button>
+                            <button className='home-btn'>Register For Free</button>
                         </li>
                     </ul>
                 </div>

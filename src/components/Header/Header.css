@@ -5,7 +5,7 @@ header{
     width: 100%;
     background-color: var(--color-grey-white);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 5px 6%;
+    padding: 5px clamp(10px, 6%, 140px);
 }
 
 
@@ -23,7 +23,7 @@ header{
 }
 
 .heading{
-    font-size: 1.7rem;
+    font-size: clamp(1.1rem, 2vw, 1.7rem);
     font-weight: 700;
     background: linear-gradient(90deg, var(--color-purple), var(--color-pink), var(--color-orange-yellow));
     -webkit-background-clip: text;
@@ -114,7 +114,7 @@ ul i{
 }
 
 
-.register-btn{
+.home-btn{
     background: linear-gradient(45deg, var(--color-deep-purple), var(--color-deep-pink));
     color: var(--color-context-white);
     border: none;
@@ -128,8 +128,8 @@ ul i{
     font-weight: 600;
     text-decoration: none;
     position: relative;
-    font-size: 20px;
-    margin-left: 20px;
+    font-size: clamp(1rem, 2vw, 20px);
+    margin-left: clamp(3px, 0.6vw, 20px);
 }
 
 .courses::after{
@@ -147,6 +147,6 @@ ul i{
     color: var(--color-purple);
     font-weight: 600;
     text-decoration: none;
-    font-size: 21px;
+    font-size: clamp(1rem, 2vw, 20px);
     margin-right: 25px;
 }
