@@ -1,0 +1,85 @@
+.hand-star-anim-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.hand-img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  transform: scaleX(-1);
+  animation: hand-tilt 2s cubic-bezier(.7,0,.3,1) infinite;
+  filter: brightness(0) invert(1);
+}
+
+.star-anim {
+  transform: translateX(0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 22px;
+  left: 7px;
+}
+
+.star-icon {
+  font-size: 1.2rem;
+  filter: drop-shadow(0 0 8px var(--color-transparent-yellow));
+  animation: star-pop 2s cubic-bezier(.7,0,.3,1) infinite;
+}
+
+.star-rays {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.star-rays .ray {
+  position: absolute;
+  width: 1px;
+  height: 5px;
+  background: var(--color-context-white);
+  border-radius: 2px;
+  opacity: 0.7;
+  left: 50%;
+  top: 40%;
+  transform-origin: 50% 100%;
+  scale: 0.7;
+  animation: ray-grow 2s cubic-bezier(.7,0,.3,1) infinite;
+}
+
+/* Position each ray around the star */
+.star-rays .ray-1 { transform: rotate(-90deg) translateY(-15px); }
+.star-rays .ray-2 { transform: rotate(-45deg) translateY(-15px); }
+.star-rays .ray-3 { transform: rotate(0deg) translateY(-15px); }
+.star-rays .ray-4 { transform: rotate(45deg) translateY(-15px); }
+.star-rays .ray-5 { transform: rotate(90deg) translateY(-15px); }
+
+
+@keyframes hand-tilt {
+  0% { transform: scaleX(-1) rotate(0deg); }
+  30% { transform: scaleX(-1) rotate(-10deg); }
+  60% { transform: scaleX(-1) rotate(10deg); }
+  100% { transform: scaleX(-1) rotate(5deg); }
+}
+
+@keyframes star-pop {
+  0% { transform: scale(1) translateY(-3px); }
+  30% { transform: scale(1.18) translateY(-3px); }
+  60% { transform: scale(1) translateY(-3px); }
+  100% { transform: scale(1) translateY(-3px); }
+}
+
+@keyframes ray-grow {
+  0% { scale: 0.7; opacity: 0; }
+  30% { scale: 1.2; opacity: 1; }
+  60% { scale: 0.7; opacity: 0.7; }
+  100% { scale: 0.7; opacity: 0; }
+}

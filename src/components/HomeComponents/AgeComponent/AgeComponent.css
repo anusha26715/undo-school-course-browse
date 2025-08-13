@@ -1,0 +1,32 @@
+.age-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 6%;
+}
+
+.age-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    flex-wrap: wrap;
+}
+
+.age-option{
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.age-text{
+    margin: 0;
+    padding: 0;
+}

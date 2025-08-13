@@ -15,7 +15,7 @@
   --color-orange-yellow:#F8854C;
   --color-grey-white:rgb(246, 245, 245);
   --color-white: #fff;
-  --color-transperent: rgba(255, 255, 255, 0.3);
+  --color-transperent: rgba(255, 255, 255, 0.2);
   --color-yellow: #F7D06B;
   --color-transperent-yellow: rgba(255, 251, 0, 0.591);
   --color-context-white: rgba(246, 245, 245, 0.9);
@@ -25,6 +25,8 @@
   --color-orange:rgb(255, 77, 0);
   --color-dark-yellow:rgb(255, 204, 0);
   --color-light-pink:rgb(255, 153, 204);
+  --color-grey:grey;
+  --color-green:rgb(11, 218, 11);
 }
 
 

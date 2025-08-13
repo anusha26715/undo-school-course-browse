@@ -1,0 +1,45 @@
+/* Winking Animation */
+@keyframes wink {
+    0%, 100% {
+        transform: scaleY(1);
+        opacity: 1; /* Eye visible */
+    }
+    45%, 55% {
+        transform: scaleY(0.1);
+        opacity: 0; /* Hide eye when winking */
+    }
+}
+
+@keyframes wink-stroke-animation {
+    0%, 45%, 55%, 100% {
+        opacity: 0; /* Hidden most of the time */
+    }
+    50% {
+        opacity: 1; /* Show wink line at peak */
+    }
+}
+
+/* Heartbeat Animation */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(0.85);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Apply to elements */
+#eye-left {
+    animation: wink 3s infinite;
+    transform-origin: center;
+}
+
+#wink-stroke {
+    animation: wink-stroke-animation 3s infinite;
+}
+
+#heart {
+    animation: heartbeat 1.5s infinite;
+    transform-origin: center;
+}
