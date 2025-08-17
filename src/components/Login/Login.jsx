@@ -51,21 +51,21 @@ const Login = () => {
                 <div className="icon-container top-icon">
                   <i class="bi bi-star-fill star"></i>
                 </div>
-                <img src="/src/assets/images/learning-img-1.jpg" alt="kids learn" />
+                <img src="/images/learning-img-1.jpg" alt="kids learn" />
               </div>
               <div className="login-img-2 d-flex">
-                <img src="/src/assets/images/learning-img-2.jpg" alt="kids learn" />
+                <img src="/images/learning-img-2.jpg" alt="kids learn" />
               </div>
               
               <div className="login-img-3">
-                <img src="/src/assets/images/learning-img-3.jpg" alt="kids learn" />
+                <img src="/images/learning-img-3.jpg" alt="kids learn" />
               </div>
               
               <div className="login-img-4">
                 <div className="icon-container bottom-icon">
                   <div className="fs-4">🎈</div>
                 </div>
-                <img src="/src/assets/images/learning-img-4.jpg" alt="kids learn" />
+                <img src="/images/learning-img-4.jpg" alt="kids learn" />
               </div>
             </div>
           </div>

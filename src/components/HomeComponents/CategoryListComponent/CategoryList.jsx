@@ -14,27 +14,27 @@ const CategoryList = () => {
         {
             id:1,
             title:"Coding",
-            image:"src/assets/images/laptop.png"
+            image:"/images/laptop.png"
         },
         {
             id:2,
             title:"Public Speaking",
-            image:"src/assets/images/mike.png"
+            image:"/images/mike.png"
         },
         {
             id:3,
             title:"Chess",
-            image:"src/assets/images/horse.png"
+            image:"/images/horse.png"
         },
         {
             id:4,
             title:"Home Work help",
-            image:"src/assets/images/book.png"
+            image:"/images/book.png"
         },
         {
             id:5,
             title:"App Building",
-            image:"src/assets/images/mobile.png"
+            image:"/images/mobile.png"
         }
     ]
 

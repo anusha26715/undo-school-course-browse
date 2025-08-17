@@ -121,7 +121,7 @@ const TeacherList = () => {
                 <SwiperSlide className='teacher-container mb-5 ps-2 pe-2' key={teacher.id}
                 >
                     <div className="teacher-wrapper">
-                        <img src="src/assets/images/teacher-img.png" alt={teacher.name} className='teacher-img' />         
+                        <img src="/images/teacher-img.png" alt={teacher.name} className='teacher-img' />         
                         <div className="teacher-card"
                         onMouseEnter={() => setTeacherCardHovered(teacher.id)}
                 onMouseLeave={() => setTeacherCardHovered(null)}

@@ -32,10 +32,10 @@ const Home = () => {
       </section>
 
       <section className="launches-container" id="launchesContainer">
-        <img src="src/assets/images/clock-frame.png" className='clock-frame-1' alt="clock" />
+        <img src="/images/clock-frame.png" className='clock-frame-1' alt="clock" />
         <h2 className='webinar-heading'>Webinar Starting Within 24 hrs</h2>
         <CourseListComponent/>
-        <img src="src/assets/images/clock-frame.png" className='clock-frame-2' alt="clock" />
+        <img src="/images/clock-frame.png" className='clock-frame-2' alt="clock" />
       </section>
 
       <section className="courses-container">

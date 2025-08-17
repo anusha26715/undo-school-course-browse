@@ -14,7 +14,7 @@ const Banner = () => {
                   <p className='mb-0 banner-text'>Courses</p>
                 </div>
                 <div className="banner-img-wrapper">
-                    <img src="src/assets/images/banner-left-img.png" className='banner-img' alt="kidsPlay" />
+                    <img src="/images/banner-left-img.png" className='banner-img' alt="kidsPlay" />
                 </div>
                 <div className="banner-info banner-rating">
                   <AnimatedHandStar />
@@ -47,7 +47,7 @@ const Banner = () => {
                   </div>
                 </div>
                 <div className="banner-img-wrapper">
-                    <img src="src/assets/images/banner-right-img.png" className='banner-img' alt="kidsPlay" />
+                    <img src="/images/banner-right-img.png" className='banner-img' alt="kidsPlay" />
                 </div>
             </div>
         </div>
