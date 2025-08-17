@@ -10,12 +10,12 @@
 .teacher-courses-container{
     background: linear-gradient(
   90deg,
-  var(--color-light-purple) 0%,
-  var(--color-light-purple) 2%,
+  var(--color-light-lavender) 0%,
+  var(--color-light-lavender) 2%,
   var(--color-context-white) 45%,
   var(--color-context-white) 55%,
-  var(--color-light-purple) 95%,
-  var(--color-light-purple) 100%
+  var(--color-light-lavender) 95%,
+  var(--color-light-lavender) 100%
 );
 
 }
