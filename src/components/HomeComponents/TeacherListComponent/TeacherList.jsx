@@ -1,4 +1,4 @@
-import React from 'react'
+import {useState} from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -7,6 +7,8 @@ import "swiper/css/pagination";
 import './TeacherList.css'
 
 const TeacherList = () => {
+    const [teacherCardHovered, setTeacherCardHovered] = useState(null)
+    const [teacherCardActive, setTeacherCardActive] = useState(null)
 
     const teachers =[
         {
@@ -75,6 +77,14 @@ const TeacherList = () => {
         }
     ]
 
+    const getTeacherCardColor = (teacherId) => {
+      if(teacherId === 1) return "var(--color-orange-yellow)";
+      if(teacherId === 2) return "var(--color-pink)";
+      if(teacherId === 3 || teacherId === 6) return "var(--color-purple)";
+      if(teacherId === 4 || teacherId === 8) return "var(--color-green)";
+      if(teacherId === 5 || teacherId === 7) return "var(--color-blue)";
+    }
+
   return (
     <Swiper className='mb-5' modules={[Navigation, Pagination]}
             spaceBetween={10}
@@ -96,18 +106,33 @@ const TeacherList = () => {
               },
               1280: {       // xl (>=1280px)
                 slidesPerView: 6,
-              },
+              }
             }}
             navigation={true}   // <-- enables arrows
             pagination={{ clickable: true }} // optional dots
             loop={true} >
             {
               teachers.map((teacher) => {
+                const teacherCardColor = getTeacherCardColor(teacher.id)
+                const isTeacherCardHovered = teacherCardHovered === teacher.id;
+                const isTeacherCardActive = teacherCardActive === teacher.id
+
                 return (
-                <SwiperSlide className='teacher-container mb-5 ps-2 pe-2' key={teacher.id}>
+                <SwiperSlide className='teacher-container mb-5 ps-2 pe-2' key={teacher.id}
+                >
                     <div className="teacher-wrapper">
                         <img src="src/assets/images/teacher-img.png" alt={teacher.name} className='teacher-img' />         
-                        <div className="teacher-card">      
+                        <div className="teacher-card"
+                        onMouseEnter={() => setTeacherCardHovered(teacher.id)}
+                onMouseLeave={() => setTeacherCardHovered(null)}
+                onClick={()=> setTeacherCardActive(teacher.id)}
+                style={{
+                  backgroundColor: isTeacherCardHovered? teacherCardColor: isTeacherCardActive? teacherCardColor: "transparent",
+                  border: (isTeacherCardHovered||isTeacherCardActive)? `2px solid ${teacherCardColor}`: "2px solid #dfff",
+                  boxShadow: (isTeacherCardHovered||isTeacherCardActive)? `0 0 10px ${teacherCardColor}`: "0 0 5px grey",
+                  transition: "all 0.3s ease-in-out"
+                }}
+                        >      
                             <h4>{teacher.name}</h4>
                             <p className='m-0'>{teacher.qualification} | {teacher.experience}Years</p>
                             <p className='m-0'>{teacher.students} Students</p>

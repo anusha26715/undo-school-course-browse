@@ -1,0 +1,34 @@
+#categoryContainer{
+    height: 80px;
+    display: flex !important;       /* make sure cards center properly */
+    justify-content: center;        /* center the card */
+    align-items: flex-end; 
+    overflow: visible !important;
+    margin: 4rem 0;
+}
+
+.category-container{
+    position: relative;
+    border: 2px solid var(--color-purple);
+    border-radius: 20px;
+    display: flex !important;       /* make sure cards center properly */
+    justify-content: flex-start;        /* center the card */
+    align-items: flex-end;        /* let content start from top */
+    overflow: visible !important;
+    padding: 0 0 10px 20px;
+    cursor: pointer;
+}
+
+.category-img{
+    position: absolute;
+    right: 20px;
+    top: -30px;
+    height: 100px;
+    width: auto;
+}
+
+.category-container span{
+    display: inline-flex;
+    max-width: 60%;
+    
+}

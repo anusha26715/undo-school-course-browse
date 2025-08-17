@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import './CourseListComponent.css'
 
-const CourseListComponent = () => {
+const CourseListComponent = ({layout = 'vertical'}) => {
   const [hoveredId, setHoveredId] = useState(null);
   const [activeId, setActiveId] = useState(null);
 
@@ -136,7 +136,23 @@ const CourseListComponent = () => {
     <div className='course-list-container' id='courses'>
       <Swiper modules={[Navigation, Pagination]}
         spaceBetween={20}
-        breakpoints={{
+        breakpoints={layout === 'horizontal' ? {
+          0: {          // small screens (mobile)
+            slidesPerView: 1,
+          },
+          640: {        // sm (>=640px)
+            slidesPerView: 1,
+          },
+          768: {        // md (>=768px)
+            slidesPerView: 1,
+          },
+          1024: {       // lg (>=1024px)
+            slidesPerView: 2,
+          },
+          1280: {       // xl (>=1280px)
+            slidesPerView: 2,
+          },
+        } : {
           0: {          // small screens (mobile)
             slidesPerView: 1,
           },
@@ -165,7 +181,7 @@ const CourseListComponent = () => {
             <SwiperSlide className='mb-5' key={course.id} id='courses'>
             <div className="course-wrapper">
               <div className='text-end rating-text'>⭐ {course.rating} | 200+ learners</div>
-              <div className='course-card'
+              <div className={`course-card ${layout === 'horizontal' ? 'course-card-horizontal' : ''}`}
               onMouseEnter={() => setHoveredId(course.id)}
                 onMouseLeave={() => setHoveredId(null)}
                 onClick={() => setActiveId(course.id)}
@@ -177,30 +193,33 @@ const CourseListComponent = () => {
                 }} >
                 {course.id === 1 && <div className='course-badge'>Selling Fast</div>}
                 <img src={course.image} alt="courses" className='img-fluid course-img' />
-                <div className='course-details'>
-                  <span className='course-language'>{course.Language}</span>
-                  <span className='course-level'>{course.level}</span>
-                  <span className='course-classes'>{course.classes} classes</span>
-                </div>
-                <h5>{course.title}</h5>
-                <p className='course-description'>{course.description}</p>
-                <div className='course-footer d-flex justify-content-between align-items-center'>
-                  <pre className='course-data'>
-                    <span>
-                      <i className="bi bi-person"></i>
-                      {course.ageGroup}yrs
-                    </span> | 
-                    <span>
-                       <i className="bi bi-clock"></i> 
-                        {course.duration}mins
-                    </span> | 
-                    <span>
-                      <i className="bi bi-currency-rupee"></i>{course.price}
-                    </span>
-                  </pre>
-                    <i className="bi bi-cart2 course-cart"></i>
+                <div className="course-content">
+                  <div className='course-details'>
+                    <span className='course-language'>{course.Language}</span>
+                    <span className='course-level'>{course.level}</span>
+                    <span className='course-classes'>{course.classes} classes</span>
+                  </div>
+                  <h5>{course.title}</h5>
+                  <p className='course-description'>{course.description}</p>
+                  <div className='course-footer d-flex justify-content-between align-items-center'>
+                    <pre className='course-data'>
+                      <span>
+                        <i className="bi bi-person"></i>
+                        {course.ageGroup}yrs
+                      </span> | 
+                      <span>
+                        <i className="bi bi-clock"></i> 
+                          {course.duration}mins
+                      </span> | 
+                      <span>
+                        <i className="bi bi-currency-rupee"></i>{course.price}
+                      </span>
+                    </pre>
+                      <i className="bi bi-cart2 course-cart"></i>
+                  </div>
                 </div>
               </div>
+              
             </div>
         </SwiperSlide>
           )})

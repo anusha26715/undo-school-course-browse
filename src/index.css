@@ -36,6 +36,11 @@
   --color-purple-rgb:153, 52, 228;
   --color-light-black:rgb(61, 60, 60);
   --color-light-lavender:rgb(233, 226, 245);
+  --color-blue:rgb(0, 153, 255);
+  --color-red:rgb(255, 42, 0);
+  --color-pale-yellow: rgb(248, 239, 187);
+  --color-pale-blue:rgb(164, 226, 248);
+  --color-tint-blue:rgb(222, 237, 241);
 }
 
 
