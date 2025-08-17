@@ -25,7 +25,7 @@ const AgeComponent = () => {
   return (
     <section className="age-container">
       <h3>How old Are You? 🎯</h3>
-      <p className='pt-2 pb-2'>Pick your age and find the perfect courses just for you!</p>
+      <p className='pt-2 pb-2 text-center'>Pick your age and find the perfect courses just for you!</p>
       <div className="age-options">
         {ageArray.map((age) => {
           const color = getColor(age);

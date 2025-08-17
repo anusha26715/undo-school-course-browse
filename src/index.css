@@ -12,11 +12,11 @@
 :root {
   --color-purple:#9934E4;
   --color-pink:#D141B1;
-  --color-orange-yellow:#F8854C;
+  --color-orange-yellow:#f9884f;
   --color-grey-white:rgb(246, 245, 245);
   --color-white: #fff;
   --color-transperent: rgba(255, 255, 255, 0.2);
-  --color-yellow: #F7D06B;
+  --color-yellow: rgb(247, 208, 107);
   --color-transperent-yellow: rgba(255, 251, 0, 0.591);
   --color-context-white: rgba(246, 245, 245, 0.9);
   --color-deep-purple:#3A1D67;
@@ -26,7 +26,16 @@
   --color-dark-yellow:rgb(255, 204, 0);
   --color-light-pink:rgb(255, 153, 204);
   --color-grey:grey;
+  --color-medium-grey:rgb(201, 199, 199);
+  --color-light-grey:rgb(218, 217, 217);
   --color-green:rgb(11, 218, 11);
+  --color-yellow-rgb: 247, 208, 107;
+  --color-orange-yellow-rgb:249, 136, 79;
+  --color-pink-rgb:209, 65, 177;
+  --color-green-rgb:11, 218, 11;
+  --color-purple-rgb:153, 52, 228;
+  --color-light-black:rgb(61, 60, 60);
+  --color-light-purple:rgb(233, 226, 245);
 }
 
 

@@ -26,7 +26,7 @@ const Banner = () => {
             </div>
 
             <div className="col-md-6 banner-context">
-                <h3 className='banner-heading'>Learn a New Skill <br /><span>Everyday, Anytime, and Anywhere.</span></h3>
+                <h3 className='banner-heading'>Learn a New Skill <br /><span className='text-center'>Everyday, Anytime, and Anywhere.</span></h3>
                 <form className='banner-input-form' type="submit">
                     <div className='input-group d-flex justify-content-between align-items-center'>
                         <i className="bi bi-search"></i>

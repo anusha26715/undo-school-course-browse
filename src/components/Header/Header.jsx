@@ -44,7 +44,7 @@ const Header = () => {
                         <div className="logo-mark">🚀</div>
                         <h1 className="heading ps-2 mb-0">KidsLearn</h1>
                     </Link>
-                    <a href="" className='courses'>Courses</a>
+                    <a href="#courses" className='courses'>Courses</a>
                 </div>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>

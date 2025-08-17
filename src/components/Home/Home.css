@@ -1,0 +1,36 @@
+.launches-container{
+    padding: 20px 6%;
+    background-color: var(--color-grey-white);
+}
+
+.courses-container,.teacher-courses-container{
+    padding: 20px 6%;
+}
+
+.teacher-courses-container{
+    background: linear-gradient(
+  90deg,
+  var(--color-light-purple) 0%,
+  var(--color-light-purple) 2%,
+  var(--color-context-white) 45%,
+  var(--color-context-white) 55%,
+  var(--color-light-purple) 95%,
+  var(--color-light-purple) 100%
+);
+
+}
+
+
+.launch-course-heading{
+    text-align: center;
+}
+
+.launch-course-heading::after{
+    content:'⭐';
+    background: linear-gradient(180deg, rgb(241, 229, 231) 35%,  var(--color-orange-yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
