@@ -72,3 +72,7 @@
     left: 20px;
     transform: scaleX(-1);
 }
+
+.category-list-main{
+    overflow: hidden !important;
+}

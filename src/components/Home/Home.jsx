@@ -40,8 +40,10 @@ const Home = () => {
 
       <section className="courses-container">
         <h2 className='text-center'>Popular Categories</h2>
-        <p className='text-center mb-5'>Pick what you love most! These categories have everything you need to learn something awesome⭐</p>
-        <CategoryList/>
+        <p className='text-center'>Pick what you love most! These categories have everything you need to learn something awesome⭐</p>
+        <div className='category-list-main'>
+          <CategoryList/>
+        </div>
         <CourseListComponent/>
       </section>
 

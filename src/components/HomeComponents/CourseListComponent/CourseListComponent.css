@@ -142,6 +142,19 @@
     position: relative !important;
 }
 
+@media (max-width: 546px) {
+    .course-card-horizontal {
+        flex-direction: column !important;
+        gap: 15px;
+    }
+    
+    .course-card-horizontal .course-img {
+        width: 100% !important;
+        height: 200px !important;
+    }
+}
+
+
 .course-card-horizontal .course-badge {
     position: absolute !important;
     top: -10px !important;

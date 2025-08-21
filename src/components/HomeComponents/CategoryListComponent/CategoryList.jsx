@@ -49,25 +49,31 @@ const CategoryList = () => {
 
   return (
     <Swiper modules={[Navigation, Pagination]} id='categoryContainer'
-        spaceBetween={40}
+        spaceBetween={20}
         breakpoints={{
               0: {          // small screens (mobile)
                 slidesPerView: 1,
+                spaceBetween: 10,
               },
               440: {        // sm (>=640px)
                 slidesPerView: 1,
+                spaceBetween: 15,
               },
               640: {        // sm (>=640px)
                 slidesPerView: 2,
+                spaceBetween: 20,
               },
               768: {        // md (>=768px)
                 slidesPerView: 3,
+                spaceBetween: 25,
               },
               1024: {       // lg (>=1024px)
                 slidesPerView: 4,
+                spaceBetween: 30,
               },
               1280: {       // xl (>=1280px)
                 slidesPerView: 5,
+                spaceBetween: 40,
               }
             }}
         navigation={true}   // <-- enables arrows

@@ -7,6 +7,14 @@
     margin: 4rem 0;
 }
 
+#categoryContainer .swiper-pagination {
+    position: absolute !important;
+    bottom: -30px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: auto !important;
+}
+
 .category-container{
     position: relative;
     border: 2px solid var(--color-purple);
@@ -14,7 +22,6 @@
     display: flex !important;       /* make sure cards center properly */
     justify-content: flex-start;        /* center the card */
     align-items: flex-end;        /* let content start from top */
-    overflow: visible !important;
     padding: 0 0 10px 20px;
     cursor: pointer;
 }
